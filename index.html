@@ -302,7 +302,7 @@
             font-family: 'Ceremonious One', cursive;
             font-size: 4.2rem;
             position: absolute;
-            left: 4px;
+            left: 3px;
             top: 0;
             color: #ffffff;
             z-index: 1;
@@ -312,7 +312,7 @@
             font-family: 'Ceremonious One', cursive;
             font-size: 4.2rem;
             position: absolute;
-            left: 22px;
+            left: 24px;
             top: 22px;
             color: #404529;
             z-index: 2;
@@ -354,6 +354,11 @@
         .photo-container.photo-fit .photo-img {
             position: static;
             object-fit: contain;
+        }
+
+        .photo-container.no-frame {
+            background: transparent;
+            border: none;
         }
 
         /* Timeline Program */
@@ -785,11 +790,12 @@
         </div>
 
         <!-- БЛОК 5 -->
-        <div class="glass-block">
+        <div class="glass-block auto-height">
             <div class="f-cormorant title-large" style="font-size: 2rem; margin-bottom: 0px;">Локация</div>
             <div class="f-ceremonious" style="font-size: 2.83rem; line-height: 1.02; margin-top: 0;">Место проведения</div>
             
-            <p class="f-gothic" style="margin: 6px 0;">Торжественная церемония будет проходить по адресу:<br>ЗАГС, Океанский проспект, 7 (торцевая часть)</p>
+            <p class="f-gothic" style="margin: 6px 0;"><strong>Торжественная церемония будет проходить по адресу:</strong><br>ЗАГС, Океанский проспект, 7 (торцевая часть)</p>
+            <a href="https://yandex.ru/maps/?text=%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D0%BA%2C%20%D0%9E%D0%BA%D0%B5%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%2C%207" target="_blank" class="btn">ЗАГС на карте в Яндекс.Картах</a>
 
             <p class="f-gothic" style="margin: 6px 0; font-weight: bold;">Банкет будет проходить в Море Гранд и Море Холл</p>
             
@@ -798,7 +804,7 @@
             </div>
 
             <p class="f-gothic" style="font-size: 0.9rem; opacity: 0.8;">Адрес: ул.мыс Доронина, 12 ст2, пос. Русский</p>
-            <a href="https://yandex.ru/maps/?text=​улица мыс Доронина,+12 ст2,+пос. Русский" target="_blank" class="btn">На карте в Яндекс.Картах</a>
+            <a href="https://yandex.ru/maps/?text=%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D0%BA%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%BC%D1%8B%D1%81%20%D0%94%D0%BE%D1%80%D0%BE%D0%BD%D0%B8%D0%BD%D0%B0%2C%2012%20%D1%81%D1%822%2C%20%D0%BF%D0%BE%D1%81.%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9" target="_blank" class="btn">На карте в Яндекс.Картах</a>
         </div>
 
         <!-- БЛОК 6 -->
@@ -873,13 +879,11 @@
 
             <div class="f-cormorant" style="font-size: 0.9rem; letter-spacing: 0.1em; width: 100%; text-align: right; margin-top: 15px;">МУЖСКИЕ ОБРАЗЫ</div>
             <p class="f-gothic" style="text-align: right; font-size: 0.85rem; opacity: 0.9; margin: 6px 0 10px;">Черные костюмы, белые рубашки и бабочки</p>
-            <div style="display: flex; gap: 10px; width: 100%; margin-top: 5px;">
-                <div class="photo-container photo-fit no-frame" style="flex: 1; margin: 0;">
-                    <img src="Photo9.jpeg" alt="" class="photo-img">
-                </div>
-                <div class="photo-container photo-fit no-frame" style="flex: 1; margin: 0;">
-                    <img src="Photo10.jpeg" alt="" class="photo-img">
-                </div>
+            <div class="photo-container photo-fit no-frame" style="width: 80%; margin: 10px auto 0;">
+                <img src="Photo9.jpeg" alt="" class="photo-img">
+            </div>
+            <div class="photo-container photo-fit no-frame" style="width: 60%; margin: 10px auto 0;">
+                <img src="Photo10.jpeg" alt="" class="photo-img">
             </div>
         </div>
 
